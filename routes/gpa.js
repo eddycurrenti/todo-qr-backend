@@ -18,15 +18,15 @@ route.post("/gpa2", (req,res)=>{
             return res.status(400).send("number dal na yarr");
         }
 
-        if(!subject.grade || !subject.credit){
-            return res.status(400).json("kuch bhul rahe ho lala");
-        }
+        if(subject.credit <= 0){
+    return res.status(400).send("Credit must be greater than 0");
+}
 
         if(subject.grade > 10 || subject.grade < 0){
             return res.status(400).send(`${subject.grade} should be less than or equal to 10 and more than 0`);
         }
         
-        if(subject.credit > 4 || subject.grade < 0){
+        if(subject.credit > 4 || subject.credit < 0){
             return res.status(400).send(`${subject.grade} should be less than or equal to 4 and more than 0`);
         }
         
