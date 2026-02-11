@@ -1,6 +1,7 @@
 const express = require("express");
 const route = express.Router();
-const model = require("D:/to-DO+QR/DB/database");
+const model = require("../DB/database");
+
 const mongoose = require("mongoose");
 
 route.post("/taskCreate",async (req,res)=>{
