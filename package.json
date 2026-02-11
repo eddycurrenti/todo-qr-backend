@@ -1,15 +1,18 @@
 {
+  "name": "todo-qr-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "cors": "^2.8.6",
     "dotenv": "^17.2.4",
     "express": "^5.2.1",
     "mongoose": "^9.2.0",
-    "node": "^25.6.1",
-    "nodemon": "^3.1.11",
     "qrcode": "^1.5.4"
-  },
-  "scripts": {
-  "start": "node index.js"
-}
-
+  }
 }
